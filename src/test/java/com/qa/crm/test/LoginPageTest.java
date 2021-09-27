@@ -31,6 +31,5 @@ public class LoginPageTest {
 	  @AfterTest
 	  public void tearDown() {
 		  driver.quit();
-	  }
-	  
+	  }	  
 }
