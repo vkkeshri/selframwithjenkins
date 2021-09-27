@@ -1,16 +1,12 @@
 package com.qa.crm.test;
 
 import org.testng.annotations.Test;
-
 import com.qa.crm.base.BasePage;
 import com.qa.crm.pages.LoginPage;
-
-import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.BeforeTest;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 
 public class LoginPageTest {
 	
@@ -19,7 +15,7 @@ public class LoginPageTest {
 	LoginPage loginpage;
 	BasePage basepage;
 	
-	  @BeforeMethod
+	  @BeforeTest
 	  public void setUp() {
 		  basepage = new BasePage();
 		  prop = basepage.initialize_properties();
@@ -32,7 +28,7 @@ public class LoginPageTest {
 		  loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	  }
 	  
-	  @AfterMethod
+	  @AfterTest
 	  public void tearDown() {
 		  driver.quit();
 	  }
