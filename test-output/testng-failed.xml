@@ -1,65 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test">
     <classes>
       <class name="com.qa.crm.test.LoginPageTest"/>
       <class name="com.qa.crm.test.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.qa.crm.test.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.LoginPageTest -->
-      <class name="com.qa.crm.test.HomePageTest">
-        <methods>
-          <include name="verifyHomePageLogoName"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.HomePageTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.qa.crm.test.HomePageTest">
-        <methods>
-          <include name="verifyHomePageLogoName"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.HomePageTest -->
-      <class name="com.qa.crm.test.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.LoginPageTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
-  <test name="Test(failed)(failed)">
-    <classes>
-      <class name="com.qa.crm.test.HomePageTest">
-        <methods>
-          <include name="verifyHomePageLogoName"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.HomePageTest -->
-      <class name="com.qa.crm.test.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.crm.test.LoginPageTest -->
-    </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+</suite> <!-- Failed suite [Suite] -->
