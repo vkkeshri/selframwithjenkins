@@ -10,7 +10,7 @@ import com.qa.crm.base.BasePage;
 
 public class HomePage extends BasePage{
 
-	@FindBy(xpath="//td[@class='logo_text']")
+	@FindBy(xpath="//td[@class='headertext']//a")
 	WebElement logoname;
 	
 	public HomePage(WebDriver driver){
@@ -19,6 +19,7 @@ public class HomePage extends BasePage{
 	}
 	
 	public String getLogoName(){
+		System.out.println(driver.findElement(By.cssSelector("//td[@class='headertext']//a")));
 		return logoname.getText();
 	}
 }
