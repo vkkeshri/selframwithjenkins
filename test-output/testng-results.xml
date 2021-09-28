@@ -1,51 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="55078" started-at="2021-09-28T04:56:02Z" finished-at="2021-09-28T04:56:57Z">
+  <suite name="Default suite" duration-ms="2174" started-at="2021-09-28T18:19:34Z" finished-at="2021-09-28T18:19:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="55078" started-at="2021-09-28T04:56:02Z" finished-at="2021-09-28T04:56:57Z">
-      <class name="com.qa.crm.test.LoginPageTest">
-        <test-method status="PASS" signature="verifyUserNameTextBox()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="verifyUserNameTextBox" duration-ms="92" started-at="2021-09-28T10:26:48Z" description="Username textbox on login screen" finished-at="2021-09-28T10:26:48Z">
+    <test name="Default test" duration-ms="2174" started-at="2021-09-28T18:19:34Z" finished-at="2021-09-28T18:19:36Z">
+      <class name="com.qa.crm.test.Rest_Get">
+        <test-method status="PASS" signature="verifyGetResponse()[pri:0, instance:com.qa.crm.test.Rest_Get@1dd02175]" name="verifyGetResponse" duration-ms="2091" started-at="2021-09-28T23:49:34Z" finished-at="2021-09-28T23:49:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserNameTextBox -->
-        <test-method status="PASS" signature="verifyPasswordTextBox()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="verifyPasswordTextBox" duration-ms="54" started-at="2021-09-28T10:26:48Z" description="Password textbox on login screen" depends-on-methods="com.qa.crm.test.LoginPageTest.verifyUserNameTextBox" finished-at="2021-09-28T10:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPasswordTextBox -->
-        <test-method status="PASS" signature="verifyLognButton()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="verifyLognButton" duration-ms="56" started-at="2021-09-28T10:26:48Z" description="Login button on login screen" depends-on-methods="com.qa.crm.test.LoginPageTest.verifyPasswordTextBox" finished-at="2021-09-28T10:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLognButton -->
-        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="loginIntoApplication" duration-ms="7040" started-at="2021-09-28T10:26:48Z" description="Login and navigate to home screen" depends-on-methods="com.qa.crm.test.LoginPageTest.verifyLognButton" finished-at="2021-09-28T10:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntoApplication -->
-      </class> <!-- com.qa.crm.test.LoginPageTest -->
-      <class name="com.qa.crm.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.test.HomePageTest@365c30cc]" name="setUp" is-config="true" duration-ms="36535" started-at="2021-09-28T10:26:02Z" finished-at="2021-09-28T10:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="setUp" is-config="true" duration-ms="9942" started-at="2021-09-28T10:26:38Z" finished-at="2021-09-28T10:26:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageLogoName()[pri:0, instance:com.qa.crm.test.HomePageTest@365c30cc]" name="verifyHomePageLogoName" duration-ms="2" started-at="2021-09-28T10:26:55Z" finished-at="2021-09-28T10:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageLogoName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.test.HomePageTest@365c30cc]" name="tearDown" is-config="true" duration-ms="618" started-at="2021-09-28T10:26:55Z" finished-at="2021-09-28T10:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.crm.test.LoginPageTest@33cb5951]" name="tearDown" is-config="true" duration-ms="644" started-at="2021-09-28T10:26:56Z" finished-at="2021-09-28T10:26:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.crm.test.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyGetResponse -->
+      </class> <!-- com.qa.crm.test.Rest_Get -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
