@@ -1,7 +1,9 @@
 package com.qa.crm.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -9,6 +11,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.google.gson.JsonParser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -35,8 +39,9 @@ public class BasePage {
 	public Properties initialize_properties(){
 		prop = new Properties();
 		try {
-			//FileInputStream ip = new FileInputStream("/selframwithjenkins/src/main/java/com/qa/crm/configuration/config.properties");
-			InputStream ip = getClass().getClassLoader().getResourceAsStream("config.properties");
+			//FileInputStream ip = new FileInputStream("C:/AerisAutomation/eclipse/workspace/selframwithjenkins/resource/config.properties");
+			FileReader ip = new FileReader(System.getProperty("user.dir")+File.separator+"resource"+File.separator+"config"+".properties");
+			//InputStream ip = getClass().getClassLoader().getResourceAsStream("config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

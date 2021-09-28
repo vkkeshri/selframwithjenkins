@@ -23,6 +23,18 @@ public class LoginPage extends BasePage{
 		PageFactory.initElements(driver, this);
 	}
 	
+	public boolean getUserNameTextBox(){
+		return username.isDisplayed();
+	}
+	
+	public boolean getPasswordTextBox(){
+		return password.isDisplayed();
+	}
+	
+	public boolean getLoginButton(){
+		return login.isDisplayed();
+	}
+	
 	public HomePage doLogin(String user, String passwd){
 		username.sendKeys(user);
 		password.sendKeys(passwd);
